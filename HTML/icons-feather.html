@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" data-layout="vertical">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The most advanced Bootstrap 5 Responsive Admin Dashboard" />
+        <meta name="keywords" content="fadmin, bootstrap, bootstrap 5,admin themes, web design, web development, free templates, 
+        free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dark mode, bootstrap button, 
+        bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables" />
+        <meta name="author" content="Fadmin by ThemesBoss" />
+
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <!-- <meta property="og:url" content="https://live link"/> -->
+
+
+        <!-- Site Title -->
+        <title>Fadmin - Responsive Bootstrap Admin Template - Fadmin by Themeboss</title>
+
+        <!-- Site favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- scrollbar -->
+        <link rel="stylesheet" href="assets/css/plugins/simplebar.min.css">
+        <!-- Icon Css -->
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+
+        <link href="assets/js/plugins/uniform/css/default.css" rel="stylesheet"/>
+        <link href="assets/js/plugins/switchery/switchery.min.css" rel="stylesheet"/>
+
+        <!--Morris Chart CSS -->
+        <link rel="stylesheet" href="assets/js/plugins/morris/morris.css">
+
+        <!-- Custom  Css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+
+    </head>    
+    <body>
+
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            <!-- Page Sidebar -->
+            <div class="page-sidebar">
+                <a class="logo-box" href="index.html">
+                    <span>
+                        <i class="mdi mdi-chemical-weapon" id="fixed-sidebar-toggle-button"></i>
+                        <span>Fadmin</span>
+                    </span>
+                    <i class="mdi mdi-close" id="sidebar-toggle-button-close"></i>
+                </a>
+                <div class="page-sidebar-inner simple-bar" data-simplebar>
+                    <div class="page-sidebar-menu" data-Current-Page=icons-feather>
+                        <ul class="accordion-menu">
+                            <li>
+                                <a href="index.html" data-page="index">
+                                    <i class="menu-icon mdi mdi-home"></i><span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="menu-icon mdi mdi-bullseye"></i><span>UI Elements</span><i
+                                        class="accordion-icon fa fa-angle-right"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="ui-buttons.html" data-page="ui-buttons">Buttons</a></li>
+                                    <li><a href="ui-cards.html" data-page="ui-cards">Cards</a></li>
+                                    <li><a href="ui-tabs-accordions.html" data-page="ui-tabs">Tabs &amp; Accordions</a></li>
+                                    <li><a href="ui-alerts.html" data-page="ui-alerts">Alerts</a></li>
+                                    <li><a href="ui-progressbars.html" data-page="ui-progressbars">Progress Bars</a></li>
+                                    <li><a href="ui-typography.html" data-page="ui-typography">Typography</a></li>
+                                    <li><a href="ui-grid.html" data-page="ui-grid">Grid</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="menu-icon mdi mdi-cards-outline"></i><span>Icons</span><i class="accordion-icon fa fa-angle-right"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="icons-material.html" data-page="icons-material">Material Design</a></li>
+                                    <li><a href="icons-ion.html" data-page="icons-ion">Ion Icons</a></li>
+                                    <li><a href="icons-fontawesome.html" data-page="icons-fontawesome">Font Awesome</a></li>
+                                    <li><a href="icons-feather.html" data-page="icons-feather">Feather Icons</a></li>
+                                    <li><a href="icons-themify.html" data-page="icons-themify">Themify Icons</a></li>
+                                    <li><a href="icons-dripicons.html" data-page="icons-dripicons">Dripicons</a></li>
+                                    <li><a href="icons-typicons.html" data-page="icons-typicons">Typicons Icons</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="menu-icon mdi mdi-apple-keyboard-command"></i><span>Layouts</span><i class="accordion-icon fa fa-angle-right"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="layout-blank.html" data-page="layout-blank">Blank Page</a></li>
+                                    <li><a href="layout-boxed.html" data-page="layout-boxed">Boxed Layout</a></li>
+                                    <li><a href="layout-collapsed-sidebar.html" data-page="layout-collapsed-sidebar">Collapsed Sidebar</a></li>
+                                    <li><a href="layout-fixed-header.html" data-page="layout-fixed-header">Fixed Header</a></li>
+                                    <li><a href="layout-fixed-sidebar.html" data-page="layout-fixed-sidebar">Fixed Sidebar</a></li>
+                                    <li><a href="layout-fixed-sidebar-header.html" data-page="layout-fixed-sidebar-header">Fixed Sidebar &amp; Header</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="menu-icon mdi mdi-clipboard-outline"></i><span>Forms</span><i class="accordion-icon fa fa-angle-right"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="form-mask.html" data-page="form-mask">Form Mask</a></li>
+                                    <li><a href="form-elements.html" data-page="form-elements">Form Elements</a></li>
+                                    <li><a href="form-xeditable.html" data-page="form-xeditable">Form Xeditable</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="menu-icon mdi mdi-table"></i><span>Tables</span><i class="accordion-icon fa fa-angle-right"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="tables-footable.html" data-page="tables-footable">Foo Table</a></li>
+                                    <li><a href="tables-responsive.html" data-page="tables-responsive">Responsive Table</a></li>
+                                    <li><a href="tables-basic.html" data-page="tables-basic">Basic Tables</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="menu-icon mdi mdi-chart-bubble"></i><span>Chart</span><i class="accordion-icon fa fa-angle-right"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="chart-morris.html" data-page="chart-morris">Morris Chart</a></li>
+                                    <li><a href="apexcharts.html" data-page="apexcharts">Apexcharts</a></li>
+                                    <li><a href="echarts.html" data-page="echats">Echarts</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="maps.html" data-page="maps">
+                                    <i class="menu-icon mdi mdi-map-marker-multiple"></i><span>Vector Maps</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="menu-icon mdi mdi-google-pages"></i><span>Extra Pages</span><i class="accordion-icon fa fa-angle-right"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="pages-login.html" data-page="pages-login">Login</a></li>
+                                    <li><a href="pages-register.html" data-page="pages-register">Register</a></li>
+                                    <li><a href="pages-recoverpw.html" data-page="pages-recoverpw">Recover Password</a></li>
+                                    <li><a href="pages-lock-screen.html" data-page="pages-lock-screen">Lock Screen</a></li>
+                                    <li><a href="pages-400.html" data-page="pages-400">Error 400</a></li>
+                                    <li><a href="pages-403.html" data-page="pages-403">Error 403</a></li>
+                                    <li><a href="pages-404.html" data-page="pages-404">Error 404</a></li>
+                                    <li><a href="pages-500.html" data-page="pages-500">Error 500</a></li>
+                                    <li><a href="pages-503.html" data-page="pages-503">Error 503</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-divider"></li>
+                            <li>
+                                <a href="../../../../Documentation/index.html" target="_blank" data-page="documentation">
+                                    <i class="menu-icon mdi mdi-incognito"></i><span>Documentation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /Page Sidebar -->
+            <!-- /Page Sidebar -->
+
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Header -->
+                <div class="page-header">
+                    <div class="search-form">
+                        <form action="#" method="GET">
+                            <div class="input-group border">
+                                <input type="text" name="search" class="form-control search-input" placeholder="Type something...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" id="close-search" type="button"><i class="mdi mdi-close"></i></button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <nav class="navbar navbar-expand-lg navbar-default border bg-body-tertiary py-0">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="navbar-header d-lg-none">
+                                    <div class="logo-sm">
+                                        <a href="javascript:void(0)" id="sidebar-toggle-button"><i class="fa fa-bars"></i></a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <ul class="nav navbar-nav d-none d-lg-flex mb-2 mb-lg-0">
+                                        <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="mdi mdi-menu"></i></a></li>
+                                        <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="mdi mdi-fullscreen"></i></a></li>
+                                        <li><a href="javascript:void(0)" id="search-button"><i class="mdi mdi-magnify"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="dropdown topbar-head-dropdown header-item">
+                                        <a class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle border-0" href="javascript:void(0)" id="theme-toggle-switch">
+                                            <i class="mdi mdi-weather-night fs-20"></i>
+                                        </a>
+                                    </div>
+                                    <div class="ms-1 header-item">
+                                        <a href="javascript:void(0)" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle border-0 right-sidebar-toggle" data-sidebar-id="main-right-sidebar">
+                                            <i class="mdi mdi-email-outline fs-20"></i>
+                                        </a>
+                                    </div>
+                                    <!-- Default dropstart button -->
+                                    <div class="dropdown ms-1 header-item">
+                                        <a class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle border-0 dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-bell-outline fs-20"></i></a>
+                                        <ul class="dropdown-menu dropdown-lg dropdown-content dropdown-menu-end">
+                                            <li class="drop-title border-bottom">Notifications<a href="#" class="drop-title-link"><i class="fa fa-angle-right"></i></a></li>
+                                            <li class="dropdown-notifications" data-simplebar>
+                                                <ul class="list-unstyled dropdown-oc">
+                                                    <li>
+                                                        <a class="border-bottom" href="#"><span class="notification-badge bg-primary"><i class="fa fa-photo"></i></span>
+                                                        <span class="notification-info">Finished uploading photos to gallery <b>"South Africa"</b>.
+                                                            <small class="notification-date">20:00</small>
+                                                        </span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="border-bottom" href="#"><span class="notification-badge bg-primary"><i class="fa fa-at"></i></span>
+                                                        <span class="notification-info"><b>John Doe</b> mentioned you in a post "Update v1.5".<br>
+                                                            <small class="notification-date">06:07</small>
+                                                        </span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="border-bottom" href="#"><span class="notification-badge bg-danger"><i class="fa fa-bolt"></i></span>
+                                                        <span class="notification-info">4 new special offers from the apps you follow!
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="rounded-1" href="#"><span class="notification-badge bg-success"><i class="fa fa-bullhorn"></i></span>
+                                                        <span class="notification-info">There is a meeting with <b>Ethan</b> in 15 minutes!
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown ms-1 user-dropdown header-item">
+                                        <a class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle border-0 dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false"><img src="assets/images/avatar/avatar-1.png" alt="" class="rounded-circle img-fluid"></a>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a href="#">Profile</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                            <li><a href="#"><span class="badge pull-right badge-danger">42</span>Messages</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Account Settings</a></li>
+                                            <li><a href="#">Log Out</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                </div>
+                <!-- /Page Header -->
+
+                <!-- Page Inner -->
+                <div class="page-inner">
+                    <!-- Page Heading -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title mb-15">
+                                    <div class="d-flex justify-content-md-between justify-content-center py-2">
+                                        <div class="d-none d-md-block">
+                                            <h3 class="breadcrumb-header">Feather Icons</h3>
+                                            <p class="text-muted mb-0">Nam libero tempore, cum soluta nobis</p>
+                                        </div>
+                                        <div class="pull-right">
+                                            <div class="btn-group mx-auto">
+                                                <ol class="breadcrumb hide-phone m-0" id="breadcrumb-placeholder" data-breadcrumb="Fadmin / Icon / Feather Icons">
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Page Heading -->
+        
+                    <div class="container-fluid" id="main-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card border mb-0">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">Feather Icons</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div class="row icon-demo-content">
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-eye"></i>fi-eye
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-paper-clip"></i>fi-paper-clip
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-mail"></i>fi-mail
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-toggle"></i>fi-toggle
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-layout"></i>fi-layout
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-link"></i>fi-link
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-bell"></i>fi-bell
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-lock"></i>fi-lock
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-unlock"></i>fi-unlock
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-ribbon"></i>fi-ribbon
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-image"></i>fi-image
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-signal"></i>fi-signal
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-target"></i>fi-target
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-clipboard "></i>fi-clipboard
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-clock "></i>fi-clock
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-watch "></i>fi-watch
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-air-play "></i>fi-air-play
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-camera "></i>fi-camera
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-video "></i>fi-video
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-disc "></i>fi-disc
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-printer "></i>fi-printer
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-monitor "></i>fi-monitor
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-server "></i>fi-server
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-cog "></i>fi-cog
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-heart "></i>fi-heart
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-paragraph "></i>fi-paragraph
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-align-justify "></i>fi-align-justify
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-align-left "></i>fi-align-left
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-align-center "></i>fi-align-center
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-align-right "></i>fi-align-right
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-book "></i>fi-book
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-layers "></i>fi-layers
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-stack "></i>fi-stack
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-stack-2 "></i>fi-stack-2
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-paper "></i>fi-paper
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-paper-stack "></i>fi-paper-stack
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-search "></i>fi-search
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-zoom-in "></i>fi-zoom-in
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-zoom-out "></i>fi-zoom-out
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-reply "></i>fi-reply
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-circle-plus "></i>fi-circle-plus
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-circle-minus "></i>fi-circle-minus
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-circle-check "></i>fi-circle-check
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-circle-cross "></i>fi-circle-cross
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-square-plus "></i>fi-square-plus
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-square-minus "></i>fi-square-minus
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-square-check "></i>fi-square-check
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-square-cross "></i>fi-square-cross
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-microphone "></i>fi-microphone
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-record "></i>fi-record
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-skip-back "></i>fi-skip-back
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-rewind "></i>fi-rewind
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-play "></i>fi-play
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-pause "></i>fi-pause
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-stop "></i>fi-stop
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-fast-forward "></i>fi-fast-forward
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-skip-forward "></i>fi-skip-forward
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-shuffle "></i>fi-shuffle
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-repeat "></i>fi-repeat
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-folder "></i>fi-folder
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-umbrella "></i>fi-umbrella
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-moon "></i>fi-moon
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-thermometer "></i>fi-thermometer
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-drop "></i>fi-drop
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-sun "></i>fi-sun
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-cloud "></i>fi-cloud
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-cloud-upload "></i>fi-cloud-upload
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-cloud-download "></i>fi-cloud-download
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-upload "></i>fi-upload
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-download "></i>fi-download
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-location "></i>fi-location
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-location-2 "></i>fi-location-2
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-map "></i>fi-map
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-battery "></i>fi-battery
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-head "></i>fi-head
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-briefcase "></i>fi-briefcase
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-speech-bubble "></i>fi-speech-bubble
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-anchor "></i>fi-anchor
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-globe "></i>fi-globe
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-box "></i>fi-box
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-reload "></i>fi-reload
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-share "></i>fi-share
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-marquee "></i>fi-marquee
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-marquee-plus "></i>fi-marquee-plus
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-marquee-minus "></i>fi-marquee-minus
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-tag "></i>fi-tag
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-power "></i>fi-power
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-command "></i>fi-command
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-alt "></i>fi-alt
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-esc "></i>fi-esc
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-bar-graph "></i>fi-bar-graph
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-bar-graph-2 "></i>fi-bar-graph-2
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-pie-graph "></i>fi-pie-graph
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-star "></i>fi-star
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-arrow-left "></i>fi-arrow-left
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-arrow-right "></i>fi-arrow-right
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-arrow-up "></i>fi-arrow-up
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-arrow-down "></i>fi-arrow-down
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-volume "></i>fi-volume
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-mute "></i>fi-mute
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-content-right "></i>fi-content-right
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-content-left "></i>fi-content-left
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-grid "></i>fi-grid
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-grid-2 "></i>fi-grid-2
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-columns "></i>fi-columns
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-loader "></i>fi-loader
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-bag "></i>fi-bag
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-ban "></i>fi-ban
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-flag "></i>fi-flag
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-trash "></i>fi-trash
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-expand "></i>fi-expand
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-contract "></i>fi-contract
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-maximize "></i>fi-maximize
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-minimize "></i>fi-minimize
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-plus "></i>fi-plus
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-minus "></i>fi-minus
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-check "></i>fi-check
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-cross "></i>fi-cross
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-move "></i>fi-move
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-delete "></i>fi-delete
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-menu "></i>fi-menu
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-archive "></i>fi-archive
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-inbox "></i>fi-inbox
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-outbox "></i>fi-outbox
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-file "></i>fi-file
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-file-add "></i>fi-file-add
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-file-subtract "></i>fi-file-subtract
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-help "></i>fi-help
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-open "></i>fi-open
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <i class="fi-ellipsis "></i>fi-ellipsis
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Wrapper -->
+                </div>
+                <!-- footer -->
+                
+                <div class="page-footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="mb-0">&copy; <script>document.write(new Date().getFullYear())</script> Fadmin - Crafted with. 
+                                    <i class="mdi mdi-heart text-danger"></i>
+                                    <a href="https://themeforest.net/user/themesboss" target="_blank">ThemesBoss.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Page Inner -->
+                <div class="page-right-sidebar border border-left" id="main-right-sidebar">
+                    <div class="page-right-sidebar-inner">
+                        <div class="right-sidebar-top border-bottom">
+                            <div class="right-sidebar-tabs">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link bg-transparent border-0 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">chat</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link bg-transparent border-0" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">settings</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="javascript:void(0)" class="right-sidebar-toggle right-sidebar-close" data-sidebar-id="main-right-sidebar"><i class="mdi mdi-close"></i></a>
+                        </div>
+                        <div class="right-sidebar-content" data-simplebar>
+                            <!-- Tab panes -->
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" role="tabpanel"  id="home-tab-pane" aria-labelledby="home-tab" tabindex="0">
+                                    <div class="chat-list">
+                                        <span class="chat-title mt-0">Recent</span>
+                                        <a href="javascript:void(0);" class="right-sidebar-toggle chat-item unread border-bottom border-top" data-sidebar-id="chat-right-sidebar">
+                                            <div class="user-avatar">
+                                                <img src="assets/images/avatar/avatar-2.png" alt="">
+                                            </div>
+                                            <div class="chat-info">
+                                                <span class="chat-author">David</span>
+                                                <span class="chat-text">where u at?</span>
+                                                <span class="chat-time">08:50</span>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0);" class="right-sidebar-toggle chat-item unread border-bottom active-user" data-sidebar-id="chat-right-sidebar">
+                                            <div class="user-avatar">
+                                                <img src="assets/images/avatar/avatar-3.png" alt="">
+                                            </div>
+                                            <div class="chat-info">
+                                                <span class="chat-author">Daisy</span>
+                                                <span class="chat-text">Daisy sent a photo.</span>
+                                                <span class="chat-time">11:34</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="chat-list">
+                                        <span class="chat-title mt-0">Older</span>
+                                        <a href="javascript:void(0);" class="right-sidebar-toggle chat-item border-bottom border-top" data-sidebar-id="chat-right-sidebar">
+                                            <div class="user-avatar">
+                                                <img src="assets/images/avatar/avatar-4.png" alt="">
+                                            </div>
+                                            <div class="chat-info">
+                                                <span class="chat-author">Tom</span>
+                                                <span class="chat-text">You: ok</span>
+                                                <span class="chat-time">2d</span>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0);" class="right-sidebar-toggle chat-item border-bottom active-user" data-sidebar-id="chat-right-sidebar">
+                                            <div class="user-avatar">
+                                                <img src="assets/images/avatar/avatar-5.png" alt="">
+                                            </div>
+                                            <div class="chat-info">
+                                                <span class="chat-author">Anna</span>
+                                                <span class="chat-text">asdasdasd</span>
+                                                <span class="chat-time">4d</span>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0);" class="right-sidebar-toggle chat-item border-bottom active-user" data-sidebar-id="chat-right-sidebar">
+                                            <div class="user-avatar">
+                                                <img src="assets/images/avatar/avatar-6.png" alt="">
+                                            </div>
+                                            <div class="chat-info">
+                                                <span class="chat-author">Liza</span>
+                                                <span class="chat-text">asdasdasd</span>
+                                                <span class="chat-time">&nbsp;</span>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0);" class="load-more-messages" data-bs-toggle="tooltip" data-placement="bottom" title="Load More">&bull;&bull;&bull;</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" role="tabpanel"  id="profile-tab-pane" aria-labelledby="profile-tab" tabindex="0">
+                                    <div class="right-sidebar-settings">
+                                        <span class="settings-title">General Settings</span>
+                                        <ul class="sidebar-setting-list list-unstyled">
+                                            <li>
+                                                <span class="settings-option">Notifications</span>
+                                                <input type="checkbox" class="js-switch" checked />
+                                            </li>
+                                            <li>
+                                                <span class="settings-option">Activity log</span>
+                                                <input type="checkbox" class="js-switch" checked />
+                                            </li>
+                                            <li>
+                                                <span class="settings-option">Automatic updates</span>
+                                                <input type="checkbox" class="js-switch" />
+                                            </li>
+                                            <li>
+                                                <span class="settings-option">Allow backups</span>
+                                                <input type="checkbox" class="js-switch" />
+                                            </li>
+                                        </ul>
+                                        <span class="settings-title">Account Settings</span>
+                                        <ul class="sidebar-setting-list list-unstyled">
+                                            <li>
+                                                <span class="settings-option">Chat</span>
+                                                <input type="checkbox" class="js-switch" checked />
+                                            </li>
+                                            <li>
+                                                <span class="settings-option">Incognito mode</span>
+                                                <input type="checkbox" class="js-switch" />
+                                            </li>
+                                            <li>
+                                                <span class="settings-option">Public profile</span>
+                                                <input type="checkbox" class="js-switch" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+
+        <script src="assets/js/jquery.min.js"></script>
+
+        <script src="assets/js/plugins/uniform/js/jquery.uniform.standalone.js"></script>
+
+        <script src="assets/js/plugins/switchery/switchery.min.js"></script>
+
+        <!-- simplebar -->
+        <script src="assets/js/plugins/simplebar.min.js"></script>
+
+        <!-- bootstrap -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Custom Js -->
+        <script src="assets/js/custom.js"></script> 
+
+    </body>
+</html>
