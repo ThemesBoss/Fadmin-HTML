@@ -100,7 +100,7 @@ option = {
     z: 10
   },
   yAxis: {
-    axisLine: {
+    splitLine: {
       show: false
     },
     axisTick: {
@@ -378,29 +378,39 @@ var option;
 
 var data = [
   {
+      id:'gr',
     name: 'Grandpa',
+    itemStyle:{
+      color:'#5189dc'
+  },
     children: [
       {
         name: 'Uncle Leo',
         value: 15,
+        itemStyle: {
+          color: '#568de1'
+      },
         children: [
           {
-            name: 'Cousin Jack',
-            value: 2
+            name: 'Cousin\nJack',
+            value: 2,
+            itemStyle: {
+              color:'#6aa1f4'
+          },
           },
           {
-            name: 'Cousin Mary',
+            name: 'Cousin\nMary',
             value: 5,
-            children: [
-              {
-                name: 'Jackson',
-                value: 2
-              }
-            ]
+            itemStyle: {
+              color:'#6aa1f4'
+          }
           },
           {
-            name: 'Cousin Ben',
-            value: 4
+            name: 'Cousin\nBen',
+            value: 4,
+            itemStyle: {
+              color: '#6aa1f4'
+          }
           }
         ]
       },
@@ -413,42 +423,72 @@ var data = [
             value: 5
           },
           {
-            name: 'Brother Peter',
+            name: 'Brother\nPeter',
             value: 1
           }
         ]
-      }
+      },
     ]
   },
   {
-    name: 'Nancy',
-    children: [
-      {
-        name: 'Uncle Nike',
-        children: [
-          {
-            name: 'Cousin Betty',
-            value: 1
-          },
-          {
-            name: 'Cousin Jenny',
-            value: 2
-          }
-        ]
-      }
-    ]
-  }
+      name: 'Nancy',
+      itemStyle:{
+          color:'#ebb40f'
+      },
+      children: [
+        {
+          name: 'Uncle\nNike',
+          children: [
+            {
+              name: 'Cousin\nBetty',
+              value: 1
+            },
+            {
+              name: 'Cousin\nJenny',
+              value: 2
+            }
+          ]
+        }
+      ]
+    }
 ];
 option = {
   series: {
     type: 'sunburst',
-    // emphasis: {
-    //     focus: 'ancestor'
-    // },
     data: data,
     radius: [0, '90%'],
+    levels: [{}, {
+      r0: '10%',
+      r: '35%',
+      itemStyle: {
+          borderWidth: 2
+      },
+      label: {
+          rotate: 'tangential'
+      }
+  }, {
+      r0: '35%',
+      r: '60%',
+      itemStyle: {
+          borderWidth: 2
+      },
+      label: {
+          rotate: 'tangential'
+      }
+  }, {
+      r0: '60%',
+      r: '100%',
+      label: {
+          rotate:'radial',
+          padding: 3,
+          silent: false
+      },
+      itemStyle: {
+          borderWidth: 2
+      }
+  }],
     label: {
-      rotate: 'radial'
+      rotate: 'tangential'
     }
   }
 };
@@ -470,8 +510,22 @@ option = {
       name: 'Pressure',
       type: 'gauge',
       progress: {
-        show: true,
+        show: true
       },
+      axisLabel: {            
+        fontWeight: 'bolder',
+        color: '#878a99',
+        shadowColor: '#fff', 
+        shadowBlur: 10
+    },
+      axisTick: {            
+        length: 15,        
+        lineStyle: {       
+            color: 'auto',
+            shadowColor:  '#878a99', 
+            shadowBlur: 10
+        }
+    },
       detail: {
         color: '#878a99',
         valueAnimation: true,
@@ -480,7 +534,7 @@ option = {
       data: [
         {
           value: 50,
-          name: 'SCORE',
+          name: 'SCORE'
         }
       ]
     }
