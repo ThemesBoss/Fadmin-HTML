@@ -2226,7 +2226,8 @@ progress {
 .form-control::file-selector-button {
   padding: 0.5rem 0.9rem;
   margin: -0.5rem -0.9rem;
-  margin-inline-end: 0.9rem;
+  -webkit-margin-end: 0.9rem;
+          margin-inline-end: 0.9rem;
   color: var(--bs-body-color);
   background-color: var(--bs-input-group-addon-bg);
   pointer-events: none;
@@ -2274,7 +2275,8 @@ progress {
 .form-control-sm::file-selector-button {
   padding: 0.25rem 0.5rem;
   margin: -0.25rem -0.5rem;
-  margin-inline-end: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
 }
 
 .form-control-lg {
@@ -2286,7 +2288,8 @@ progress {
 .form-control-lg::file-selector-button {
   padding: 0.7rem 1.2rem;
   margin: -0.7rem -1.2rem;
-  margin-inline-end: 1.2rem;
+  -webkit-margin-end: 1.2rem;
+          margin-inline-end: 1.2rem;
 }
 
 textarea.form-control {
@@ -15621,18 +15624,6 @@ span.chat-title {
   opacity: 1;
 }
 
-.morris-hover.morris-default-style {
-  background-color: var(--bs-header-bg) !important;
-}
-.morris-hover.morris-default-style .morris-hover-row-label {
-  color: var(--black) !important;
-}
-
-#morris-donut-example svg text,
-#morris-donut svg text {
-  fill: #518ce5 !important;
-}
-
 .chart-container {
   width: 100%;
   height: 480px;
@@ -15654,8 +15645,17 @@ span.chat-title {
   fill: #878a99;
 }
 
-.apexcharts-theme-light {
+.apexcharts-theme-light,
+.apexcharts-menu {
   background: var(--bs-header-bg) !important;
+}
+.apexcharts-theme-light .apexcharts-menu-item:hover,
+.apexcharts-menu .apexcharts-menu-item:hover {
+  background: var(--bs-body-bg) !important;
+}
+
+.apexcharts-theme-light .apexcharts-menu-icon:hover svg {
+  fill: #878a99 !important;
 }
 
 .apexcharts-tooltip-title {
@@ -15664,5 +15664,18 @@ span.chat-title {
 
 .apexcharts-xaxistooltip {
   color: #878a99 !important;
+}
+
+.apexcharts-title-text,
+.apexcharts-text {
+  fill: #878a99;
+}
+
+.apexcharts-legend-text {
+  color: #878a99 !important;
+}
+
+.apexcharts-radialbar-hollow {
+  fill: var(--bs-header-bg);
 }
 /*# sourceMappingURL=style-rtl.min.css.map */

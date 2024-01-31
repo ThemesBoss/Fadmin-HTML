@@ -9,7 +9,10 @@ var option;
       trigger: 'axis'
     },
     legend: {
-      data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
+      data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine'],
+      textStyle: {
+        color: '#878a99'
+      }
     },
     grid: {
       left: '3%',
@@ -25,7 +28,7 @@ var option;
     xAxis: {
       type: 'category',
       boundaryGap: false,
-      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     },
     yAxis: {
       type: 'value'
@@ -73,7 +76,7 @@ var myChart = echarts.init(chartDom);
 var option;
 
 // prettier-ignore
-let dataAxis = ['点', '击', '柱', '子', '或', '者', '两', '指', '在', '触', '屏', '上', '滑', '动', '能', '够', '自', '动', '缩', '放'];
+let dataAxis = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T'];
 // prettier-ignore
 let data = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
 let yMax = 500;
@@ -139,7 +142,6 @@ option = {
 // Enable data zoom when user click bar.
 const zoomSize = 6;
 myChart.on('click', function (params) {
-  console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
   myChart.dispatchAction({
     type: 'dataZoom',
     startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
@@ -163,7 +165,10 @@ function gradiantZoomPieChart(){
     },
     legend: {
       top: '5%',
-      left: 'center'
+      left: 'center',
+      textStyle:{
+        color: '#878a99'
+      },
     },
     series: [
       {
@@ -191,12 +196,12 @@ function gradiantZoomPieChart(){
           show: false
         },
         data: [
-          { value: 1048, name: 'Search Engine' },
+          { value: 1048, name: 'Search Engine'},
           { value: 735, name: 'Direct' },
           { value: 580, name: 'Email' },
           { value: 484, name: 'Union Ads' },
           { value: 300, name: 'Video Ads' }
-        ]
+        ],
       }
     ]
   };
@@ -280,7 +285,10 @@ function gradiantZoomsradarChart(){
 
   option = {
     legend: {
-      data: ['Allocated Budget', 'Actual Spending']
+      data: ['Allocated Budget', 'Actual Spending'],
+      textStyle:{
+        color: '#878a99'
+      },
     },
     radar: {
       // shape: 'circle',
@@ -300,7 +308,7 @@ function gradiantZoomsradarChart(){
         data: [
           {
             value: [4200, 3000, 20000, 35000, 50000, 18000],
-            name: 'Allocated Budget'
+            name: 'Allocated Budget',
           },
           {
             value: [5000, 14000, 28000, 26000, 42000, 21000],
@@ -455,23 +463,24 @@ var option;
 
 option = {
   tooltip: {
-    formatter: '{a} <br/>{b} : {c}%'
+    formatter: '{a} <br/>{b} : {c}%',
   },
   series: [
     {
       name: 'Pressure',
       type: 'gauge',
       progress: {
-        show: true
+        show: true,
       },
       detail: {
+        color: '#878a99',
         valueAnimation: true,
         formatter: '{value}'
       },
       data: [
         {
           value: 50,
-          name: 'SCORE'
+          name: 'SCORE',
         }
       ]
     }
