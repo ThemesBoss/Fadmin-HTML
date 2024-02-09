@@ -1,0 +1,23 @@
+/*
+-------------------------------------------------------------------------
+* Template Name    : Landing Page Template     * 
+* Author           : ThemesBoss                                         *
+* Version          : 1.0.0                                              *
+* Created          : July 2021                                          *
+* File Description : Main scss file of the template                      *
+*------------------------------------------------------------------------
+*/
+
+@import "variables";
+@import "mixin/maps";
+@import "mixin/root";
+
+// components
+@import "./components/helper";
+@import "./components/button";
+
+@import "navbar";
+@import "index";
+@import "about";
+@import "footer";
+@import "service";

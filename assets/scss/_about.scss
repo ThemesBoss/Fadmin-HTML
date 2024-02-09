@@ -1,0 +1,44 @@
+//  About page scss
+.bg-page-head{
+    background-image: url(../images/bg-pages.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    padding: 170px 0 90px;
+}
+.about_page_images {
+    img{
+        border-radius: 30px;
+    }
+}
+.features_about {
+    p {
+        i{
+            font-size: 20px;
+            position: relative;
+            top: 2px;
+        }
+    }
+}
+.fun_icon {
+    img{
+        width: 28px;
+    }
+}
+.funfact_div_fir {
+    .fun_icon{
+        width: 56px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        background-color: rgb(10 161 149 / 18%);
+        border-radius: 5px;
+        display: inline-block;
+    }
+    .fun_content {
+        h1{
+            font-size: 46px;
+        }
+    }
+}
+
