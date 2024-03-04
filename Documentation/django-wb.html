@@ -33,7 +33,7 @@
 		        <!-- Brand and toggle get grouped for better mobile display -->
 		        <div class="navbar-header">
 
-		            <a class="navbar-brand" href="#">Fadmin -
+		            <a class="navbar-brand" href="#">Fadmin - Django<small>(5.0)</small>
 		                <small>Documentation 1.0.0</small>
 		            </a>
 		        </div>
@@ -78,6 +78,24 @@
 
                                     <h4 class="page-header">Key Features:</h4>
 									<ul>
+										<li><b>Django 5.0:</b></li>
+										<ul style="padding-left: 10px; margin-top: 10px;">
+											<li>Leverage Django's built-in features for rapid development and clean, pragmatic design.</li>
+										</ul>
+									</ul>
+									<ul>
+										<li><b>Allauth</b></li>
+										<ul style="padding-left: 10px; margin-top: 10px;">
+											<li>Leverage Alluath's user management and social authentication features.</li>
+										</ul>
+									</ul>
+									<ul>
+										<li><b>Crispy forms</b></li>
+										<ul style="padding-left: 10px; margin-top: 10px;">
+											<li>Simplifies form rendering by providing a concise syntax for defining form layouts using Python classes or templates.</li>
+										</ul>
+									</ul>
+									<ul>
 										<li><b>Bootstrap 5.3.2:</b></li>
 										<ul style="padding-left: 10px; margin-top: 10px;">
 											<li>Leverage the latest advancements in web development with the robust foundation of Bootstrap, ensuring a responsive and modern interface.</li>
@@ -87,12 +105,6 @@
 										<li><b>Gulp Integration:</b></li>
 										<ul style="padding-left: 10px; margin-top: 10px;">
 											<li>Streamline your development process with Gulp, facilitating efficient task automation and enhancing your workflow.</li>
-										</ul>
-									</ul>
-									<ul>
-										<li><b>Smooth Scrolling with Simplebar:</b></li>
-										<ul style="padding-left: 10px; margin-top: 10px;">
-											<li> Experience fluid and smooth scrolling thanks to the integration of Simplebar, providing an enhanced user experience.</li>
 										</ul>
 									</ul>
 									<ul>
@@ -158,14 +170,68 @@
 											<li>If you haven't installed Gulp globally, you can do so by running the following command:</li>
 										</ul>
 									</ul>
-                                    <div>
-                                        <code>npm install -g gulp-cli</code>
-                                    </div>
+									<ul>
+										<li><b>Git:</b></li>
+										<ul style="padding-left: 10px; margin-top: 10px;">
+											<li>Make sure to have Git installed globally & running on your computer. If you already have installed git on your computer, you can skip this step.</li>
+										</ul>
+									</ul>
+									
+									
+                                    
 
 									<h4 class="page-header">Installation Steps</h4>
                                     <p>Follow these simple steps to install and set up Fadmin Admin Template:
                                     </p>
-
+                                    <ul>
+										<li><b>Python:</b></li>
+										<ul style="padding-left: 10px; margin-top: 10px;">
+											<li>Install Python on your machine. You can download it from python.org.</li>
+										</ul>
+									</ul>
+									<ul>
+										<li><b>Check Pip version:</b></li>
+										<ul style="padding-left: 10px; margin-top: 10px;">
+											<li>
+                                                Check pip version
+                                                <code>py -m pip --version</code><br>
+                                                Upgrade pip version
+                                                <code>upgread pip </code><br>
+                                                Install pip 
+                                                <code>py -m pip install --upgrade pip  </code><br>
+                                            </li>
+										</ul>
+									<ul>
+										<li><b>Virtualenv:</b></li>
+										<ul style="padding-left: 10px; margin-top: 10px;">
+											<li>
+                                                Create virtual env
+                                                <code>py -m venv virtualenv_name </code><br>
+                                            </li>
+											<li>
+                                                Activate virtual env
+                                                <code>virtualenv_name\Scripts\activate.bat </code><br>
+                                            </li>
+										</ul>
+									</ul>
+									<ul>
+										<li><b>Django install:</b></li>
+										<ul style="padding-left: 10px; margin-top: 10px;">
+											<li>
+                                                <code> pip install django</code><br>
+                                            </li>
+										</ul>
+									</ul>
+									<ul>
+										<li><b>Install python dependencies:</b></li>
+										<ul style="padding-left: 10px; margin-top: 10px;">
+											<li>
+                                                <code>pip install django-allauth</code><br>
+                                                <code>pip install django-crispy-forms</code><br>
+                                                <code>pip install crispy-bootstrap5</code><br>
+                                            </li>
+										</ul>
+                                    </ul>
                                     <ul>
                                         <li>
                                             <p><b class="fs-1">Step 1: Unzip </b><br>
@@ -174,24 +240,34 @@
                                         </li>
                                         <li>
                                             <p><b class="fs-1">Step 2: Navigate to the Project Directory </b><br>
-                                                Run the command <code>cd ./Fadmin</code> in the Terminal
+                                                Run the command <code>cd ./Admin</code> in the Terminal
                                             </p>
                                         </li>
                                         <li>
-                                            <p><b class="fs-1">Step 3: Install Dependencies </b><br>
+                                            <p><b class="fs-1">Step 3: Install Js Dependencies And Build Assets</b><br>
                                                 Run the following command to install the project dependencies:<br>
-                                                <code>npm install</code> 
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p><b class="fs-1">Step 4: Build And Run </b><br>
-                                                Run the following command to run the project. It will first build and than run the project.<br>
+                                                <code>npm install</code> <br>
                                                 <code>gulp</code> 
                                             </p>
                                         </li>
+                                        <li>
+                                            <p><b class="fs-1">Step 5: Migrations </b><br>
+                                                Run the following command to create all the required database tables and make sure you have activated virtual env:<br>
+                                                <code>py manage.py makemigrations</code> <br>
+                                                <code>py manage.py migrate</code> 
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b class="fs-1">Step 5: Run project </b><br>
+                                                Run the following command to start django server and enjoy development with Fadmin:<br>
+                                                <code>py manage.py runserver</code> 
+                                            </p>
+                                        </li>
+
+                                        
                                     </ul>
                                     <p>
-                                        Visit http://localhost:3000 in your browser to view your Fadmin Admin Template.
+                                        Visit http://localhost:8000 in your browser to view your Fadmin Admin Template.
                                     </p>
 
 									<ul>
@@ -201,6 +277,12 @@
 										</ul>
 									</ul>
 									
+									<ul>
+										<li><b>fadmin/settings.py:</b></li>
+										<ul style="padding-left: 10px; margin-top: 10px;">
+											<li>Customize all configurations of django here.</li>
+										</ul>
+									</ul>
 									<ul>
 										<li><b>Gulpfile.js:</b></li>
 										<ul style="padding-left: 10px; margin-top: 10px;">
@@ -226,22 +308,24 @@
 
                                                 <pre class="prettyprint">
 
-Fadmin/
+Admin/
+├── components/
+│        └── App for components.
+├── dashboards/
+│       └── App for dashboards.
+├── fadmin/
+│       └── setting.py
+│                       └── All django settings here.
+├── pages/
+│       └── App for extra pages.
+├── public/
+│       └── Built assets are here.
 ├── src/
-│   ├── assets/
-│   │   ├── css/
-│   │   │   └── All css files
-│   │   ├── fonts/
-│   │   │   └── All font files
-│   │   ├── images/
-│   │   │   └── All images files
-│   │   ├── js
-│   │   │   └── All javascript files
-│   │   └── scss
-│   │       └── All scss files
-│   └── *.html
-│       └── ALL HTML files
-└── Documentation/
+│         └── All assets, scss, js and plugins are here.
+└── templates/
+        └── All html files are here.
+
+ Documentation/
 	└── index.html - documentation file for documentation.
     </pre>
 
@@ -252,49 +336,48 @@ Fadmin/
 		                                    <div class="col-sm-12">
 		                                        <h4>HTML Structure</h4>
 		                                        <hr/>
-		                                        <!-- HTML generated using hilite.me --><div style="background: #f5f5f5; overflow:auto;width:auto;border:solid gray;border-width:0px;"><pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;body</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+                                                <div style="background: #f5f5f5; overflow:auto;width:auto;border:solid gray;border-width:0px;">
+                                                <pre>
+{% load static %}
+{% include 'partials/main.html' with layout="vertical" %}
+ &lt;head&gt;
+    {% include 'partials/title-meta.html' %}
+    {% include 'partials/head-css.html' %}
+        
+    {% block page_css %}
+    {% endblock page_css %}
+ &lt;/head&gt;
 
-	<span style="color: #888888">&lt;!-- Header --&gt;</span>
-        <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">id=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;header&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
-            .. .. ..
-        <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+ &lt;body&gt;
+    {% include 'partials/navbar.html' %}
 
-        <span style="color: #888888">&lt;!-- Page Sidebar --&gt;</span>
-        <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;page-sidebar&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
-            .. .. ..
-        <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
-        <span style="color: #888888">&lt;!-- /Page Sidebar --&gt;</span>
+    {% block sidebar %}
+    {% endblock sidebar %}
 
-        <span style="color: #888888">&lt;!-- Page Content --&gt;</span>
-        <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;page-content&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
-	  <span style="color: #888888">&lt;!-- Page Inner --&gt;</span>
-	  <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;page-inner&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
-	    .. .. ..			
-	  <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
-	  <span style="color: #888888">&lt;!-- /Page Inner --&gt;</span>
-		<span style="color: #888888">&lt;!-- Footer --&gt;</span>
-	  <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;page-footer&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
-	    .. .. ..			
-	  <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
-	  <span style="color: #888888">&lt;!-- /Footer --&gt;</span>
-		<span style="color: #888888">&lt;!-- right sidebar --&gt;</span>
-	  <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;page-right-sidebar border border-left&quot;</span> <span style="color: #336699">id=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;main-right-sidebar&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
-	    .. .. ..			
-	  <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
-	  <span style="color: #888888">&lt;!-- /right sidebar --&gt;</span>
-        <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
-        <span style="color: #888888">&lt;!-- /Page Content --&gt;</span>
+    &lt;!-- Page Content --&gt;
+    &lt;div class="page-content" &gt;
+        &lt;!-- Page Inner -- &gt;
+        &lt;div class="page-inner" &gt;
+            {% block content %}
+            {% endblock content %}
+        &lt;/div &gt;
+        &lt;!-- footer -- &gt;
+        {% include 'partials/footer.html' %}
+        &lt;!-- right sidebar -- &gt;
+        {% include 'partials/right-sidebar.html' %}
+    &lt;/div &gt;
+    {% include 'partials/vendor-scripts.html' %}
 
-        <span style="color: #888888">&lt;!-- scripts --&gt;</span>
-        <span style="color: #bb0066; font-weight: bold">&lt;script</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;text/javascript&quot;</span>&gt;</span>
-            .. .. ..
-        <span style="color: #bb0066; font-weight: bold">&lt;/script&gt;</span>
+    {% block page_js %}
+    {% endblock page_js %}
+        
+&lt;/body &gt;
 
-<span style="color: #bb0066; font-weight: bold">&lt;/body&gt;</span>
-</pre></div>
-
-		                                    </div>
-		                                </div>
+&lt;/html &gt;
+                    </pre>
+                    </div>
+    </div>
+</div>
 
 		                                <div class="row p-t-20">
 		                                    <div class="col-sm-12">
@@ -313,27 +396,14 @@ Fadmin/
 		                                            <tbody>
 		                                            <tr>
 		                                                <td>
-		                                                    <code>bootstrap.min.css</code>
-		                                                </td>
-		                                                <td>
-		                                                    Fadmin uses the bootstrap v5.3.2. The core bootstrap file is being
-		                                                    used in all the pages.
-		                                                </td>
-		                                            </tr>
-
-		                                            <tr>
-		                                                <td>
 		                                                    <code>style.css</code>
 		                                                </td>
 		                                                <td>
 		                                                    This file is containing all common styles for all the pages.
 		                                                </td>
 		                                            </tr>
-
-
 		                                            </tbody>
 		                                        </table>
-
 		                                    </div>
 		                                </div>
 
@@ -379,7 +449,7 @@ Fadmin/
 		                        </div>
 
 
-		                        <div id="credits" class="com-container">
+                                <div id="credits" class="com-container">
 		                            <h4 class="page-header">Credits &amp; Official Documentation</h4>
 		                            <p>I've used the following resources as listed. These are some awesome creation and I am
 		                                really thankful to the respective community.</p>
@@ -395,10 +465,46 @@ Fadmin/
 
 		                                    <tr>
 		                                        <td>
+		                                            <code>Django</code>
+		                                        </td>
+		                                        <td>
+                                                    <a href="https://docs.djangoproject.com/en/5.0/">django 5.0</a>
+		                                        </td>
+		                                    </tr>
+
+		                                    <tr>
+		                                        <td>
+                                                    <code>Django Allauth</code>
+		                                        </td>
+		                                        <td>
+                                                    <a href="https://docs.allauth.org/en/latest/installation/quickstart.html">django-allauth 0.61.0 </a>
+		                                        </td>
+		                                    </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <code>Crispy Forms</code>
+                                                </td>
+                                                <td>
+                                                    <a href="https://django-crispy-forms.readthedocs.io/en/latest/install.html">django-crispy-forms 2.1</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <code>Crispy Bootstrap5 </code>
+                                                </td>
+                                                <td>
+                                                    <a href="https://pypi.org/project/crispy-bootstrap5/">crispy-bootstrap5 2023.10</a>
+                                                </td>
+                                            </tr>
+
+		                                    <tr>
+		                                        <td>
 		                                            <code>Bootstrap</code>
 		                                        </td>
 		                                        <td>
-                                                    <a href="http://getbootstrap.com/">http://getbootstrap.com</a>
+                                                    <a href="http://getbootstrap.com/">bootstrap v5.3.2</a>
 		                                        </td>
 		                                    </tr>
 
@@ -407,7 +513,7 @@ Fadmin/
 		                                            <code>Jquery</code>
 		                                        </td>
 		                                        <td>
-                                                    <a href="https://jquery.com">https://jquery.com</a>
+                                                    <a href="https://jquery.com">jquery v3.6.3</a>
 		                                        </td>
 		                                    </tr>
 
@@ -416,7 +522,7 @@ Fadmin/
 		                                            <code>Simplebar</code>
 		                                        </td>
 		                                        <td>
-                                                    <a href="https://github.com/Grsmto/simplebar">https://github.com/Grsmto/simplebar</a>
+                                                    <a href="https://github.com/Grsmto/simplebar">simplebar v6.2.5</a>
 		                                        </td>
 		                                    </tr>
 
@@ -425,7 +531,7 @@ Fadmin/
 		                                            <code>Materialdesign Icons</code>
 		                                        </td>
 		                                        <td>
-                                                    <a href="https://materialdesignicons.com">https://materialdesignicons.com</a>
+                                                    <a href="https://materialdesignicons.com">materialdesignicons v7.4.47</a>
 		                                        </td>
 		                                    </tr>
 
@@ -434,7 +540,7 @@ Fadmin/
 		                                            <code>Ionic Icons</code>
 		                                        </td>
 		                                        <td>
-                                                    <a href="https://ionic.io/ionicons">https://ionic.io/ionicons</a>
+                                                    <a href="https://ionic.io/ionicons">ionicons v7.1.0</a>
 		                                        </td>
 		                                    </tr>
 
@@ -443,7 +549,7 @@ Fadmin/
 		                                            <code>Font Awesome</code>
 		                                        </td>
 		                                        <td>
-                                                    <a href="https://fontawesome.com">https://fontawesome.com</a>
+                                                    <a href="https://fontawesome.com">fontawesome v6.5.1</a>
 		                                        </td>
 		                                    </tr>
 
@@ -452,7 +558,7 @@ Fadmin/
 		                                            <code>Feathericons</code>
 		                                        </td>
 		                                        <td>
-                                                    <a href="https://feathericons.com">https://feathericons.com</a>
+                                                    <a href="https://feathericons.com">feathericons v4.29.0</a>
 		                                        </td>
 		                                    </tr>
 
@@ -461,7 +567,7 @@ Fadmin/
 		                                            <code>Themify Icons</code>
 		                                        </td>
 		                                        <td>
-                                                    <a href="https://themify.me/themify-icons">https://themify.me/themify-icons</a>
+                                                    <a href="https://themify.me/themify-icons">themify-icons </a>
 		                                        </td>
 		                                    </tr>
 
@@ -470,7 +576,7 @@ Fadmin/
 		                                            <code>Typicons</code>
 		                                        </td>
 		                                        <td>
-                                                    <a href="https://www.s-ings.com/typicons">https://www.s-ings.com/typicons</a>
+                                                    <a href="https://www.s-ings.com/typicons">typicons v2.1.2</a>
 		                                        </td>
 		                                    </tr>
 
@@ -479,7 +585,7 @@ Fadmin/
 		                                            <code>Drip icons</code>
 		                                        </td>
 		                                        <td>
-                                                    <a href="http://demo.amitjakhu.com/dripicons/">http://demo.amitjakhu.com/dripicons</a>
+                                                    <a href="http://demo.amitjakhu.com/dripicons/">dripicons v2</a>
 		                                        </td>
 		                                    </tr>
 
@@ -488,7 +594,7 @@ Fadmin/
 		                                            <code>Apex Chart</code>
 		                                        </td>
 		                                        <td>
-                                                    <a href="https://apexcharts.com">https://apexcharts.com</a>
+                                                    <a href="https://apexcharts.com">apexcharts </a>
 		                                        </td>
 		                                    </tr>
 
@@ -497,7 +603,7 @@ Fadmin/
 		                                            <code>Echarts</code>
 		                                        </td>
 		                                        <td>
-                                                    <a href="https://echartsjs.com">https://echartsjs.com</a>
+                                                    <a href="https://echartsjs.com">echartsjs v4.0</a>
 		                                        </td>
 		                                    </tr>
 
@@ -506,7 +612,7 @@ Fadmin/
 		                                            <code>Magnific-Popup</code>
 		                                        </td>
 		                                        <td>
-                                                    <a href="https://github.com/dimsemenov/Magnific-Popup">https://github.com/dimsemenov/Magnific-Popup</a>
+                                                    <a href="https://github.com/dimsemenov/Magnific-Popup">Magnific-Popup</a>
 		                                        </td>
 		                                    </tr>
 		                                    </tbody>
@@ -531,8 +637,8 @@ Fadmin/
 
 		                        <div id="changelog" class="com-container">
 									<h4 class="page-header">Changelog</h4>
-		                            <p style="text-decoration: underline; font-weight: 900; padding-top:30px;"><strong>Version
-		                                1.0.0
+									<p style="text-decoration: underline; font-weight: 900;"><strong>Version
+		                                	1.0.0
 		                                <small>- 4 March 2024</small>
 		                            </strong></p>
 
