@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords"
+		content="resume, cv, portfolio, personal, developer, matola,personal resume, onepage, clean, modern">
+	<meta name="author" content="ThemesBoss">
+
+	<!-- Page Title -->
+	<title>Fadmin | Nextjs Admin Dashboard Template</title>
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- Google-Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<!--Start Header-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+
+				<a class="navbar-brand" href="#">Fadmin -
+					<small>Documentation 1.0.0</small>
+				</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!--Start Header-->
+
+	<div id="wrapper">
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="right-bar">
+
+							<div id="intro" class="com-container">
+
+								<div id="structure" class="com-container">
+									<h3 class="text-center">Thank you very much for your purchase!</h3>
+									<div class="p-t-20">
+										<div class="alert alert-success alert-dismissable">
+											<p>If you have any questions that are beyond the scope of this
+												documentation,
+												please feel free to email or contact us via my page.</p>
+										</div>
+									</div>
+								</div>
+
+
+								<h4 class="page-header">Introduction</h4>
+								<ul>
+									<li><b>Fadmin Nextjs Admin Template - Empowering Your Dashboard Experience</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>Welcome to Fadmin, a sophisticated admin template meticulously crafted with
+											<b>Nextjs v14, Bootstrap 5.3.2, TypeScript 5.3.3</b> and powered by yarn for seamless workflow
+											management. Fadmin is designed to elevate your admin dashboard experience
+											with a focus on simplicity, flexibility, and performance.</li>
+										<li>You are important for us and so please feel free to get back to me with any
+											question or feedback.</li>
+									</ul>
+								</ul>
+
+								<h4 class="page-header">Key Features:</h4>
+								<ul>
+									<li><b>Nextjs 14.1.0:</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>Next.js is an open-source web development framework created by the private
+											company Vercel providing React-based web applications with server-side
+											rendering and static website generation.</li>
+									</ul>
+								</ul>
+								<ul>
+									<li><b>Bootstrap 5.3.2:</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>Leverage the latest advancements in web development with the robust
+											foundation of Bootstrap, ensuring a responsive and modern interface.</li>
+									</ul>
+								</ul>
+								<ul>
+									<li><b>Typescript 5.3.3:</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>TypeScript is a powerful programming language that builds on top of
+											JavaScript. Type annotations provide better autocompletion and code
+											navigation in your IDE, making writing and debugging code easier.</li>
+									</ul>
+								</ul>
+								<ul>
+									<li><b>Yarn or Npm:</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>Npm and Yarn are two package managers developers swear by. Both these
+											package managers are at the top in this space. They are constantly and
+											aggressively trying to one-up each other in the battle for supremacy over
+											this space. Both provide similar features.</li>
+									</ul>
+								</ul>
+								<ul>
+									<li><b>Smooth Scrolling with Simplebar:</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li> Experience fluid and smooth scrolling thanks to the integration of
+											Simplebar, providing an enhanced user experience.</li>
+									</ul>
+								</ul>
+								<ul>
+									<li><b>Interactive Charts with Echarts and Apexchart</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>Fadmin incorporates powerful charting libraries - Echarts and Apexchart,
+											enabling you to visualize data in a compelling and dynamic manner.</li>
+									</ul>
+								</ul>
+								<ul>
+									<li><b>Light and Dark Theme Support:</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>Choose between a light and dark theme according to your preferences or
+											seamlessly switch between them to adapt to different environments.</li>
+									</ul>
+								</ul>
+								<ul>
+									<li><b>Layout Options:</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>In <b>FAdmin</b> for changing the layout make changes in
+											<code>src/slices/layout/reducer.ts</code> file. bY making changes in
+											<code>currentLayoutType: LAYOUT_TYPES.VERTICAL</code></li>
+									</ul>
+									<pre class="prettyprint"><span style="color: #bb0066; font-weight: bold">const defaultState = {
+    currentLayoutType: LAYOUT_TYPES.VERTICAL,
+    currentLayoutModeType: LAYOUT_MODE_TYPES.LIGHT,
+};
+
+const layoutSlice = createSlice({
+    name: 'layout',
+    initialState: defaultState,
+    reducers: {
+
+        // Action to change the layout type
+        changeLayoutTypeReducer(state, action) {
+        	state.currentLayoutType = action.payload;  // layout type change
+        },
+
+        changeLayoutModeTypeReducer(state, action) {
+        	state.currentLayoutModeType = action.payload;  // layout type change
+        },
+    }
+});</span></pre>
+									<ul style="padding-left: 10px; margin-top: 15px;">
+										<li>In <b>FAdmin</b> for constants you can checkout
+											<code>src/Common/constantsLayout.tsx</code> file, where you can add and
+											remove types from admin.</li>
+
+											<table class="table table-bordered m-0">
+												<tbody>
+													<tr>
+														<td rowspan="7">
+															<code>LAYOUT_TYPES</code>
+														</td>
+														<td>
+															VERTICAL : "vertical",
+														</td>
+													</tr>
+													<tr>
+														<td>
+															BOXED : "boxed",
+														</td>
+													</tr>
+													<tr>
+														<td>
+															BLANK : "blank",
+														</td>
+													</tr>
+													<tr>
+														<td>
+															COLLAPSED : "collapsed",
+														</td>
+													</tr>
+													<tr>
+														<td>
+															FIXED_HEADER : "fixed-header",
+														</td>
+													</tr>
+													<tr>
+														<td>
+															FIXED_SIDEBAR : "fixed-sidebar",
+														</td>
+													</tr>
+													<tr>
+														<td>
+															FIXED_SIDEBAR_HEADER : "fixed-sidebar-header",
+														</td>
+													</tr>
+													<tr>
+														<td rowspan="2">
+															<code>LAYOUT_MODE_TYPES</code>
+														</td>
+														<td>
+															LIGHT : "light",
+														</td>
+													</tr>
+													<tr>
+														<td>
+															DARK : "dark",
+														</td>
+													</tr>
+												</tbody>
+											</table>
+									</ul>
+								</ul>
+
+								<h4 class="page-header">Why Fadmin ?</h4>
+
+								<ul>
+									<li><b>User-Friendly Interface:</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>Fadmin is designed with user experience in mind, ensuring a user-friendly
+											interface for administrators and developers alike.</li>
+									</ul>
+								</ul>
+								<ul>
+									<li><b>Customizable and Extendable:</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>Tailor Fadmin to your specific needs with its easily customizable and
+											extendable structure, allowing you to adapt the template to your unique
+											requirements.</li>
+									</ul>
+								</ul>
+								<ul>
+									<li><b>Responsive Design:</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>Elevate your admin dashboard to new heights with Fadmin - where simplicity
+											meets sophistication, and flexibility meets performance. Get started today
+											and unlock the full potential of your administration tasks.</li>
+									</ul>
+								</ul>
+
+								<h4 class="page-header">Getting Started Guide</h4>
+								<p>This guide will walk you through the installation process and prerequisites to get
+									your admin dashboard up and running smoothly.
+								</p>
+
+								<ul>
+									<li><b>Prerequisites</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>Before you begin, make sure you have the following prerequisites installed
+											on your system:</li>
+									</ul>
+								</ul>
+								<ul>
+									<li><b>Node.js:</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>Ensure that you have Node.js installed. You can download it from<a
+												href="https://nodejs.org/en">nodejs.org.</a></li>
+									</ul>
+								</ul>
+								<ul>
+									<li><b>Yarn or Npm:</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>Ensure that you have installed yarn or npm globally, for adding dependencies
+											and run the app.</li>
+									</ul>
+								</ul>
+
+								<h4 class="page-header">Installation Steps</h4>
+								<p>Follow these simple steps to install and set up Fadmin Admin Template:
+								</p>
+
+								<ul>
+									<li>
+										<p><b class="fs-1">Step 1: Unzip </b><br>
+											Unzip The Downloaded Folder and open it in vscode or any other code editor
+											you use.
+										</p>
+									</li>
+									<li>
+										<p><b class="fs-1">Step 2: Navigate to the Project Directory </b><br>
+											Run the command <code>cd ./Fadmin</code> in the Terminal
+										</p>
+									</li>
+									<li>
+										<p>
+											<b class="fs-1">Step 3: Install NodeModules </b><br>
+											Run the following command to install the NodeModules:<br>
+											<code>npm i / yarn</code>
+										</p>
+									</li>
+									<li>
+										<p><b class="fs-1">Step 4: Install Dependencies </b><br>
+											Run the following command to install the project dependencies:<br>
+											<code>npm install / yarn add</code>
+										</p>
+									</li>
+									<li>
+										<p><b class="fs-1">Step 5: Build And Run </b><br>
+											Run the following command to run the project. It will first build and than
+											run the project.<br>
+											<code>yarn run dev / npm run dev</code>
+										</p>
+									</li>
+								</ul>
+								<p>
+									Visit http://localhost:3000 in your browser to view your Fadmin Admin Template.
+								</p>
+
+								<ul>
+									<li><b>Customization</b></li>
+									<ul style="padding-left: 10px; margin-top: 10px;">
+										<li>Fadmin is highly customizable. Explore the project structure and
+											configuration files to tailor the template to your specific needs. Key
+											configuration files include:</li>
+									</ul>
+								</ul>
+
+								<div id="structure" class="com-container">
+									<h4 class="page-header">Structure</h4>
+									<p>I have tried my best to have standards and modular structure while developing the
+										theme. Following sections are explaining the theme File &amp; Folder, structure,
+										html file struture and plugins.</p>
+
+									<div class="row p-t-20">
+										<div class="col-sm-12">
+											<h4>Folder Structure</h4>
+											<hr />
+											<p class="m-t-20">
+												I have tried to follow the standards and modular structure while
+												developing the theme.
+												Let's take a look at the package structure:
+											</p>
+
+											<pre class="prettyprint"><span style="color: #bb0066; font-weight: bold">Fadmin/</span>
+├── public/
+├── src/
+│   ├── assets/
+│   │   ├── css/
+│   │   │   └── All css files
+│   │   ├── fonts/
+│   │   │   └── All font files
+│   │   ├── images/
+│   │   │   └── All images files
+│   │   └── scss
+│   │       └── All scss files
+│   ├── Common
+│   │   └── common files for admin
+│   ├── helpers
+│   ├── Layout
+│   ├── pages
+│   ├── slices
+│   ├── styles
+│   └── view
+├── .env
+├── .eslintrs.json
+├── gitignore
+├── global.d.ts
+├── next-env.d.ts
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── README.md
+└── tsconfig.json</pre>
+
+										</div>
+									</div>
+
+									<div class="row p-t-20">
+										<div class="col-sm-12">
+											<h4>Nextjs Structure</h4>
+											<hr />
+											<!-- HTML generated using hilite.me -->
+											<div
+												style="background: #f5f5f5; overflow:auto;width:auto;border:solid gray;border-width:0px;">
+												<pre style="margin: 0; line-height: 125%">
+
+<span style="color: #dd2200">export default function App({ Component, pageProps, ...rest }: AppProps) {</span>
+    <span style="color: #336699">const { store } = wrapper.useWrappedStore(rest);</span>
+	<span style="color: #dd2200">return (</span>
+	    <span style="color: #bb0066; font-weight: bold">&lt;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    		<span style="color: #bb0066; font-weight: bold">&lt;Head&gt;</span> 
+		    <span style="color: #dd2200">&lt;title>Fadmin | Nextjs Admin Dashboard Template&lt;/title>
+    		<span style="color: #bb0066; font-weight: bold">&lt;/Head&gt;</span>
+
+    		<span style="color: #bb0066; font-weight: bold">&lt;Provider</span> <span style="color: #336699">store=</span><span style="color: #dd2200">{store}</span><span style="color: #bb0066; font-weight: bold">&gt; </span></span>
+	 	    <span style="color: #dd2200">&lt;Component<span style="color: #dd2200">{...pageProps}</span>
+    		<span style="color: #bb0066; font-weight: bold">&lt;/Provider&gt;</span>
+        
+	    <span style="color: #bb0066; font-weight: bold">&lt;/</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+
+	<span style="color: #dd2200">);</span>
+<span style="color: #dd2200">}</span>
+</pre>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="row p-t-20">
+										<div class="col-sm-12">
+											<h4>CSS</h4>
+											<hr />
+
+											<p class="m-t-20">Files are explained below: </p>
+
+											<table class="table table-bordered m-0">
+												<thead>
+													<tr>
+														<th style="width: 20%;"><i class="ti-file"></i> File</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<code>bootstrap.min.css</code>
+														</td>
+														<td>
+															Fadmin uses the bootstrap v5.3.2. The core bootstrap file is
+															being
+															used in all the pages.
+														</td>
+													</tr>
+												</tbody>
+											</table>
+
+										</div>
+									</div>
+
+									<div class="row p-t-20">
+										<div class="col-sm-12">
+											<h4>SCSS</h4>
+											<hr />
+											<p class="m-t-20">Install Live Sass Compiler extention in your <a
+													href="https://code.visualstudio.com/" target="_blank"> Visual Code
+													Editor. </a> Click the Watch Sass button at the right side footer of
+												visual studio code.</p>
+											<table class="table table-bordered m-0">
+												<thead>
+													<tr>
+														<th style="width: 20%;"><i class="ti-file"></i> File</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<code>style.scss</code>
+														</td>
+														<td>
+															This file is containing all common styles for all the pages.
+														</td>
+													</tr>
+												</tbody>
+											</table>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+
+						<div id="credits" class="com-container">
+							<h4 class="page-header">Credits &amp; Official Documentation</h4>
+							<p>I've used the following resources as listed. These are some awesome creation and I am
+								really thankful to the respective community.</p>
+
+							<table class="table table-bordered m-0">
+								<thead>
+									<tr>
+										<th style="width: 20%;"><i class="ti-file"></i> File</th>
+										<th>Source / Link</th>
+									</tr>
+								</thead>
+								<tbody>
+
+									<tr>
+										<td>
+											<code>Bootstrap</code>
+										</td>
+										<td>
+											<a href="http://getbootstrap.com/">http://getbootstrap.com</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Nextjs</code>
+										</td>
+										<td>
+											<a href="https://nextjs.org/">https://nextjs.org/</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>React</code>
+										</td>
+										<td>
+											<a href="https://react.dev/">https://react.dev/</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Typescript</code>
+										</td>
+										<td>
+											<a
+												href="https://www.typescriptlang.org/">https://www.typescriptlang.org/</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Redux</code>
+										</td>
+										<td>
+											<a href="https://redux.js.org/">https://redux.js.org/</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Redux Toolkit</code>
+										</td>
+										<td>
+											<a href="https://redux-toolkit.js.org/">https://redux-toolkit.js.org/</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>React Bootstrap</code>
+										</td>
+										<td>
+											<a
+												href="https://react-bootstrap.netlify.app/">https://react-bootstrap.netlify.app/</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Simplebar</code>
+										</td>
+										<td>
+											<a
+												href="https://github.com/Grsmto/simplebar">https://github.com/Grsmto/simplebar</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Materialdesign Icons</code>
+										</td>
+										<td>
+											<a
+												href="https://materialdesignicons.com">https://materialdesignicons.com</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Ionic Icons</code>
+										</td>
+										<td>
+											<a href="https://ionic.io/ionicons">https://ionic.io/ionicons</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Font Awesome</code>
+										</td>
+										<td>
+											<a href="https://fontawesome.com">https://fontawesome.com</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Feathericons</code>
+										</td>
+										<td>
+											<a href="https://feathericons.com">https://feathericons.com</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Themify Icons</code>
+										</td>
+										<td>
+											<a
+												href="https://themify.me/themify-icons">https://themify.me/themify-icons</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Typicons</code>
+										</td>
+										<td>
+											<a
+												href="https://www.s-ings.com/typicons">https://www.s-ings.com/typicons</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Drip icons</code>
+										</td>
+										<td>
+											<a
+												href="http://demo.amitjakhu.com/dripicons/">http://demo.amitjakhu.com/dripicons</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Apex Chart</code>
+										</td>
+										<td>
+											<a href="https://apexcharts.com">https://apexcharts.com</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<code>Echarts</code>
+										</td>
+										<td>
+											<a href="https://echartsjs.com">https://echartsjs.com</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div id="support" class="com-container">
+							<h4 class="page-header">Support</h4>
+							<p class="m-t-20">
+								Once again thank you for purchasing the theme. I am always avaialble to help you. If you
+								have any suggestion or feature to make it more better, I am requesting you to contact
+								me, I'll try my best to add them in future updates.
+							</p>
+
+							<p>
+								Best,
+							</p>
+							<p class="text-primary">
+								- <a target="_blank"
+									href="https://themeforest.net/item/fadmin-responsive-bootstrap-admin-dashboard/23596127/support">ThemeBoss</a>
+							</p>
+						</div>
+
+						<div id="changelog" class="com-container">
+							<h4 class="page-header">Changelog</h4>
+							<p style="text-decoration: underline; font-weight: 900;"><strong>Version
+									1.0
+									<small>- 02 Aug 2024</small>
+								</strong></p>
+
+							<ul>
+								<li>
+									Initial released
+								</li>
+							</ul>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /#page-content-wrapper -->
+
+	<div class="text-center">
+		<p class="copy">2024 &copy; Fadmin.</p>
+	</div>
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
