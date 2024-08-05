@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-layout="vertical">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The most advanced Bootstrap 5 Responsive Admin Dashboard" />
+        <meta name="keywords" content="fadmin, bootstrap, bootstrap 5,admin themes, web design, web development, free templates, 
+        free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dark mode, bootstrap button, 
+        bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables" />
+        <meta name="author" content="Fadmin by ThemesBoss" />
+
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <!-- <meta property="og:url" content="https://live link"/> -->
+
+
+        <!-- Site Title -->
+        <title>Fadmin - Responsive Bootstrap Admin Template - Fadmin by Themeboss</title>
+
+        <!-- Site favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- scrollbar -->
+        <link rel="stylesheet" href="assets/css/plugins/simplebar.min.css">
+        <!-- Icon Css -->
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+
+        <link href="assets/js/plugins/uniform/css/default.css" rel="stylesheet"/>
+        <link href="assets/js/plugins/switchery/switchery.min.css" rel="stylesheet"/>
+
+        <!-- Custom  Css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+
+        <!-- Apex Chart Css -->
+        <link  type="text/html" href="assets/css/plugins/apexcharts.css" rel="stylesheet" />
+
+    </head>
+    <body>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="search-form">
+                <form action="#" method="GET">
+                    <div class="input-group border">
+                        <input type="text" name="search" class="form-control search-input" placeholder="Type something...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" id="close-search" type="button"><i class="mdi mdi-close"></i></button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-default border bg-body-tertiary py-0">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-header d-lg-none">
+                            <div class="logo-sm">
+                                <a href="javascript:void(0)" id="sidebar-toggle-button"><i class="fa fa-bars"></i></a>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <ul class="nav navbar-nav d-none d-lg-flex mb-2 mb-lg-0">
+                                <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="mdi mdi-menu"></i></a></li>
+                                <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="mdi mdi-fullscreen"></i></a></li>
+                                <li><a href="javascript:void(0)" id="search-button"><i class="mdi mdi-magnify"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="dropdown topbar-head-dropdown header-item">
+                                <a class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle border-0" href="javascript:void(0)" id="theme-toggle-switch">
+                                    <i class="mdi mdi-weather-night fs-20"></i>
+                                </a>
+                            </div>
+                            <div class="ms-1 header-item">
+                                <a href="javascript:void(0)" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle border-0 right-sidebar-toggle" data-sidebar-id="main-right-sidebar">
+                                    <i class="mdi mdi-email-outline fs-20"></i>
+                                </a>
+                            </div>
+                            <!-- Default dropstart button -->
+                            <div class="dropdown ms-1 header-item">
+                                <a class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle border-0 dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-bell-outline fs-20"></i></a>
+                                <ul class="dropdown-menu dropdown-lg dropdown-content dropdown-menu-end">
+                                    <li class="drop-title border-bottom">Notifications<a href="#" class="drop-title-link"><i class="fa fa-angle-right"></i></a></li>
+                                    <li class="dropdown-notifications" data-simplebar>
+                                        <ul class="list-unstyled dropdown-oc">
+                                            <li>
+                                                <a class="border-bottom" href="#"><span class="notification-badge bg-primary"><i class="fa fa-photo"></i></span>
+                                                <span class="notification-info">Finished uploading photos to gallery <b>"South Africa"</b>.
+                                                    <small class="notification-date">20:00</small>
+                                                </span></a>
+                                            </li>
+                                            <li>
+                                                <a class="border-bottom" href="#"><span class="notification-badge bg-primary"><i class="fa fa-at"></i></span>
+                                                <span class="notification-info"><b>John Doe</b> mentioned you in a post "Update v1.5".<br>
+                                                    <small class="notification-date">06:07</small>
+                                                </span></a>
+                                            </li>
+                                            <li>
+                                                <a class="border-bottom" href="#"><span class="notification-badge bg-danger"><i class="fa fa-bolt"></i></span>
+                                                <span class="notification-info">4 new special offers from the apps you follow!
+                                                    <small class="notification-date">Yesterday</small>
+                                                </span></a>
+                                            </li>
+                                            <li>
+                                                <a class="rounded-1" href="#"><span class="notification-badge bg-success"><i class="fa fa-bullhorn"></i></span>
+                                                <span class="notification-info">There is a meeting with <b>Ethan</b> in 15 minutes!
+                                                    <small class="notification-date">Yesterday</small>
+                                                </span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown ms-1 user-dropdown header-item">
+                                <a class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle border-0 dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false"><img src="assets/images/avatar/avatar-1.png" alt="" class="rounded-circle img-fluid"></a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Calendar</a></li>
+                                    <li><a href="#"><span class="badge pull-right badge-danger">42</span>Messages</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Account Settings</a></li>
+                                    <li><a href="#">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <!-- /Page Header -->
+
+        <!-- Page Sidebar -->
+        <div class="page-sidebar">
+            <a class="logo-box" href="index.html">
+                <span>
+                    <i class="mdi mdi-chemical-weapon" id="fixed-sidebar-toggle-button"></i>
+                    <span>Fadmin</span>
+                </span>
+                <i class="mdi mdi-close" id="sidebar-toggle-button-close"></i>
+            </a>
+            <div class="page-sidebar-inner" >
+                <div class="page-sidebar-menu simple-bar" data-Current-Page=index  data-simplebar>
+                    <ul class="accordion-menu">
+                        <li class="accordion-menu-item">
+                            <a href="index.html" data-page="index">
+                                <i class="menu-icon mdi mdi-home"></i><span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="accordion-menu-item">
+                            <a href="javascript:void(0);">
+                                <i class="menu-icon mdi mdi-bullseye"></i><span>UI Elements</span><i
+                                    class="accordion-icon fa fa-angle-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item"><a href="ui-buttons.html" data-page="ui-buttons">Buttons</a></li>
+                                <li class="sub-menu-item"><a href="ui-cards.html" data-page="ui-cards">Cards</a></li>
+                                <li class="sub-menu-item"><a href="ui-tabs-accordions.html" data-page="ui-tabs">Tabs &amp; Accordions</a></li>
+                                <li class="sub-menu-item"><a href="ui-alerts.html" data-page="ui-alerts">Alerts</a></li>
+                                <li class="sub-menu-item"><a href="ui-progressbars.html" data-page="ui-progressbars">Progress Bars</a></li>
+                                <li class="sub-menu-item"><a href="ui-typography.html" data-page="ui-typography">Typography</a></li>
+                                <li class="sub-menu-item"><a href="ui-grid.html" data-page="ui-grid">Grid</a></li>
+                            </ul>
+                        </li>
+                        <li class="accordion-menu-item">
+                            <a href="javascript:void(0);">
+                                <i class="menu-icon mdi mdi-cards-outline"></i><span>Icons</span><i class="accordion-icon fa fa-angle-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item"><a href="icons-material.html" data-page="icons-material">Material Design</a></li>
+                                <li class="sub-menu-item"><a href="icons-ion.html" data-page="icons-ion">Ion Icons</a></li>
+                                <li class="sub-menu-item"><a href="icons-fontawesome.html" data-page="icons-fontawesome">Font Awesome</a></li>
+                                <li class="sub-menu-item"><a href="icons-feather.html" data-page="icons-feather">Feather Icons</a></li>
+                                <li class="sub-menu-item"><a href="icons-themify.html" data-page="icons-themify">Themify Icons</a></li>
+                                <li class="sub-menu-item"><a href="icons-dripicons.html" data-page="icons-dripicons">Dripicons</a></li>
+                                <li class="sub-menu-item"><a href="icons-typicons.html" data-page="icons-typicons">Typicons Icons</a></li>
+                            </ul>
+                        </li>
+                        <li class="accordion-menu-item">
+                            <a href="javascript:void(0);">
+                                <i class="menu-icon mdi mdi-apple-keyboard-command"></i><span>Layouts</span><i class="accordion-icon fa fa-angle-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item"><a href="layout-blank.html" data-page="layout-blank">Blank Page</a></li>
+                                <li class="sub-menu-item"><a href="layout-boxed.html" data-page="layout-boxed">Boxed Layout</a></li>
+                                <li class="sub-menu-item"><a href="layout-collapsed-sidebar.html" data-page="layout-collapsed-sidebar">Collapsed Sidebar</a></li>
+                                <li class="sub-menu-item"><a href="layout-fixed-header.html" data-page="layout-fixed-header">Fixed Header</a></li>
+                                <li class="sub-menu-item"><a href="layout-fixed-sidebar.html" data-page="layout-fixed-sidebar">Fixed Sidebar</a></li>
+                                <li class="sub-menu-item"><a href="layout-fixed-sidebar-header.html" data-page="layout-fixed-sidebar-header">Fixed Sidebar &amp; Header</a></li>
+                            </ul>
+                        </li>
+                        <li class="accordion-menu-item">
+                            <a href="javascript:void(0);">
+                                <i class="menu-icon mdi mdi-clipboard-outline"></i><span>Forms</span><i class="accordion-icon fa fa-angle-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item"><a href="form-mask.html" data-page="form-mask">Form Mask</a></li>
+                                <li class="sub-menu-item"><a href="form-elements.html" data-page="form-elements">Form Elements</a></li>
+                                <li class="sub-menu-item"><a href="form-xeditable.html" data-page="form-xeditable">Form Xeditable</a></li>
+                            </ul>
+                        </li>
+                        <li class="accordion-menu-item">
+                            <a href="javascript:void(0);">
+                                <i class="menu-icon mdi mdi-table"></i><span>Tables</span><i class="accordion-icon fa fa-angle-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item"><a href="tables-footable.html" data-page="tables-footable">Foo Table</a></li>
+                                <li class="sub-menu-item"><a href="tables-responsive.html" data-page="tables-responsive">Responsive Table</a></li>
+                                <li class="sub-menu-item"><a href="tables-basic.html" data-page="tables-basic">Basic Tables</a></li>
+                            </ul>
+                        </li>
+                        <li class="accordion-menu-item">
+                            <a href="javascript:void(0);">
+                                <i class="menu-icon mdi mdi-chart-bubble"></i><span>Chart</span><i class="accordion-icon fa fa-angle-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item"><a href="apexcharts.html" data-page="apexcharts">Apexcharts</a></li>
+                                <li class="sub-menu-item"><a href="echarts.html" data-page="echats">Echarts</a></li>
+                            </ul>
+                        </li>
+                        <li class="accordion-menu-item">
+                            <a href="maps.html" data-page="maps">
+                                <i class="menu-icon mdi mdi-map-marker-multiple"></i><span>Vector Maps</span>
+                            </a>
+                        </li>
+                        <li class="accordion-menu-item">
+                            <a href="javascript:void(0);">
+                                <i class="menu-icon mdi mdi-google-pages"></i><span>Extra Pages</span><i class="accordion-icon fa fa-angle-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item"><a href="pages-login.html" data-page="pages-login">Login</a></li>
+                                <li class="sub-menu-item"><a href="pages-register.html" data-page="pages-register">Register</a></li>
+                                <li class="sub-menu-item"><a href="pages-recoverpw.html" data-page="pages-recoverpw">Recover Password</a></li>
+                                <li class="sub-menu-item"><a href="pages-lock-screen.html" data-page="pages-lock-screen">Lock Screen</a></li>
+                                <li class="sub-menu-item"><a href="pages-400.html" data-page="pages-400">Error 400</a></li>
+                                <li class="sub-menu-item"><a href="pages-403.html" data-page="pages-403">Error 403</a></li>
+                                <li class="sub-menu-item"><a href="pages-404.html" data-page="pages-404">Error 404</a></li>
+                                <li class="sub-menu-item"><a href="pages-500.html" data-page="pages-500">Error 500</a></li>
+                                <li class="sub-menu-item"><a href="pages-503.html" data-page="pages-503">Error 503</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="help-box text-center">
+                    <img src="assets/images/help-center.svg" class="img-fluid" alt="">
+                    <div class="p-3 text-white">
+                        <h4 class="pt-2">Help Center</h4>
+                        <p class="mt-3">Looks like there might be a theme soon.</p>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-white text-dark">Go to help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Sidebar -->
+        
+        <!-- Page Content -->
+        <div class="page-content">
+            <!-- Page Inner -->
+            <div class="page-inner">
+                <!-- Page Heading -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title mb-15">
+                                <div class="d-flex justify-content-md-between justify-content-center py-2">
+                                    <div class="d-none d-md-block">
+                                        <h3 class="breadcrumb-header">Dashborad</h3>
+                                        <p class="text-muted mb-0">Nam libero tempore, cum soluta nobis</p>
+                                    </div>
+                                    <div class="pull-right">
+                                        <div class="btn-group mx-auto">
+                                            <ol class="breadcrumb hide-phone m-0" id="breadcrumb-placeholder" data-breadcrumb="Fadmin / Dashborad">
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Page Heading -->
+                <div class="container-fluid" id="main-wrapper">
+                    <div class="row">
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card border">
+                                <div class="card-body widget-desk">
+                                    <div class="pull-right">
+                                        <h4 class="mt-0 mb-0 fw-bold">48505 <span><i class="mdi mdi-arrow-up text-success"></i></span></h4>
+                                        <p class="text-muted mb-0">Total Visits</p>
+                                    </div>
+                                    <div class="widget-icon">
+                                        <i class="mdi mdi-eye"></i>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card border">
+                                <div class="card-body widget-desk">
+                                    <div class="pull-right">
+                                        <h4 class="mt-0 mb-0 fw-bold">2832 <span><i class="mdi mdi-arrow-down text-danger"></i></span></h4>
+                                        <p class="text-muted mb-0">Sales Analytics</p>
+                                    </div>
+                                    <div class="widget-icon">
+                                        <i class="mdi mdi-chart-line"></i>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card border">
+                                <div class="card-body widget-desk">
+                                    <div class="pull-right">
+                                        <h4 class="mt-0 mb-0 fw-bold">2658 <span><i class="mdi mdi-arrow-up text-success"></i></span></h4>
+                                        <p class="text-muted mb-0">Daily Sales</p>
+                                    </div>
+                                    <div class="widget-icon">
+                                        <i class="mdi mdi-sale"></i>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card border">
+                                <div class="card-body widget-desk">
+                                    <div class="pull-right">
+                                        <h4 class="mt-0 mb-0 fw-bold">$4926 <span><i class="mdi mdi-arrow-down text-danger"></i></span></h4>
+                                        <p class="text-muted mb-0">Total Revenue</p>
+                                    </div>
+                                    <div class="widget-icon">
+                                        <i class="mdi mdi-currency-usd"></i>    
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <div class="card border">
+                                <div class="card-body">
+                                    <h5 class="header-title border-bottom mb-24 mt-0">Order Overview</h5>
+                                    <div id="areachart" style="height:350px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card border">
+                                <div class="card-body">
+                                    <h5 class="header-title border-bottom mb-24 mt-0">Yearly Revenue</h5>
+
+                                    <div id="barchart" style="height: 350px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="card border mb-xl-0">                                        
+                                <div class="card-body">
+                                    <h4 class="header-title border-bottom mb-24 mt-0">Type gadgets</h4>
+
+                                    <div id="donutchart" style="height: 332px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="card border mb-0">
+                                <div class="card-body">
+    
+                                    <h4 class="header-title border-bottom mb-24 mt-0">Sale status</h4>
+
+                                    <div class="table-responsive">
+                                        <table class="table mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Sales</th>
+                                                    <th scope="col">Cancelled</th>
+                                                    <th scope="col">Delivered</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>02/07/2023</td>
+                                                    <td>114</td>
+                                                    <td>12</td>
+                                                    <td><span class="badge badge-primary">Pending</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>02/10/2023</td>
+                                                    <td>80</td>
+                                                    <td>4</td>
+                                                    <td><span class="badge badge-success">success</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>12/08/2023</td>
+                                                    <td>256</td>
+                                                    <td>72</td>
+                                                    <td><span class="badge badge-primary">Pending</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>10/12/2023</td>
+                                                    <td>118</td>
+                                                    <td>04</td>
+                                                    <td><span class="badge badge-success">success</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td>14/06/2023</td>
+                                                    <td>88</td>
+                                                    <td>09</td>
+                                                    <td><span class="badge badge-primary">Pending</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">6</th>
+                                                    <td>21/09/2019</td>
+                                                    <td>25</td>
+                                                    <td>04</td>
+                                                    <td><span class="badge badge-primary">Pending</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- Main Wrapper -->
+            </div>
+            
+            <!-- footer -->
+            
+            <div class="page-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="mb-0">&copy; <script>document.write(new Date().getFullYear())</script> Fadmin - Crafted with. 
+                                <i class="mdi mdi-heart text-danger"></i>
+                                <a href="https://themeforest.net/user/themesboss" target="_blank">ThemesBoss.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right sidebar -->
+            <div class="page-right-sidebar border border-left" id="main-right-sidebar">
+                <div class="page-right-sidebar-inner">
+                    <div class="right-sidebar-top border-bottom">
+                        <div class="right-sidebar-tabs">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link bg-transparent border-0 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">chat</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link bg-transparent border-0" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">settings</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0)" class="right-sidebar-toggle right-sidebar-close" data-sidebar-id="main-right-sidebar"><i class="mdi mdi-close"></i></a>
+                    </div>
+                    <div class="right-sidebar-content" data-simplebar>
+                        <!-- Tab panes -->
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" role="tabpanel"  id="home-tab-pane" aria-labelledby="home-tab" tabindex="0">
+                                <div class="chat-list">
+                                    <span class="chat-title mt-0">Recent</span>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item unread border-bottom border-top" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="assets/images/avatar/avatar-2.png" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">David</span>
+                                            <span class="chat-text">where u at?</span>
+                                            <span class="chat-time">08:50</span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item unread border-bottom active-user" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="assets/images/avatar/avatar-3.png" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Daisy</span>
+                                            <span class="chat-text">Daisy sent a photo.</span>
+                                            <span class="chat-time">11:34</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="chat-list">
+                                    <span class="chat-title mt-0">Older</span>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item border-bottom border-top" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="assets/images/avatar/avatar-4.png" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Tom</span>
+                                            <span class="chat-text">You: ok</span>
+                                            <span class="chat-time">2d</span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item border-bottom active-user" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="assets/images/avatar/avatar-5.png" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Anna</span>
+                                            <span class="chat-text">asdasdasd</span>
+                                            <span class="chat-time">4d</span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item border-bottom active-user" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="assets/images/avatar/avatar-6.png" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Liza</span>
+                                            <span class="chat-text">asdasdasd</span>
+                                            <span class="chat-time">&nbsp;</span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="load-more-messages" data-bs-toggle="tooltip" data-placement="bottom" title="Load More">&bull;&bull;&bull;</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel"  id="profile-tab-pane" aria-labelledby="profile-tab" tabindex="0">
+                                <div class="right-sidebar-settings">
+                                    <span class="settings-title">General Settings</span>
+                                    <ul class="sidebar-setting-list list-unstyled">
+                                        <li>
+                                            <span class="settings-option">Notifications</span>
+                                            <input type="checkbox" class="js-switch" checked />
+                                        </li>
+                                        <li>
+                                            <span class="settings-option">Activity log</span>
+                                            <input type="checkbox" class="js-switch" checked />
+                                        </li>
+                                        <li>
+                                            <span class="settings-option">Automatic updates</span>
+                                            <input type="checkbox" class="js-switch" />
+                                        </li>
+                                        <li>
+                                            <span class="settings-option">Allow backups</span>
+                                            <input type="checkbox" class="js-switch" />
+                                        </li>
+                                    </ul>
+                                    <span class="settings-title">Account Settings</span>
+                                    <ul class="sidebar-setting-list list-unstyled">
+                                        <li>
+                                            <span class="settings-option">Chat</span>
+                                            <input type="checkbox" class="js-switch" checked />
+                                        </li>
+                                        <li>
+                                            <span class="settings-option">Incognito mode</span>
+                                            <input type="checkbox" class="js-switch" />
+                                        </li>
+                                        <li>
+                                            <span class="settings-option">Public profile</span>
+                                            <input type="checkbox" class="js-switch" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- /Page Content -->
+        
+        <script src="assets/js/plugins/jquery.min.js"></script>
+
+        <script src="assets/js/plugins/uniform/js/jquery.uniform.standalone.js"></script>
+
+        <script src="assets/js/plugins/switchery/switchery.min.js"></script>
+
+        <!-- simplebar -->
+        <script src="assets/js/plugins/simplebar.min.js"></script>
+
+        <!-- bootstrap -->
+        <script src="assets/js/plugins/bootstrap.bundle.min.js"></script>
+
+        <!-- Custom Js -->
+        <script src="assets/js/custom.js"></script>
+        
+        <!--apexcharts Chart-->
+        <script src="assets/js/plugins/apexcharts.min.js"></script>
+        <!-- <script src="assets/js/plugins/raphael/raphael-min.js"></script> -->
+        <script src="assets/js/dashborad.js"></script>
+
+    </body>
+</html>
